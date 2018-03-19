@@ -1,0 +1,37 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!--Title and style links are placed here-->
+    <title></title>
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+      <div>
+        <table class="auto-style1">
+            <tr><!--Page title or other trivia links can be placed here-->
+            <td class="auto-style2" colspan="2" > 
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></td>
+            </tr>
+            <tr><!--Navigation bar is setup here-->
+            <td class="auto-style5"><asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            </td>
+                <td class="auto-style4">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                        <!--Place content here-->
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2" colspan="2"><asp:Label ID="pageFooter" runat="server">Copyright of Hiroshi Haendra Ingray Avanitele (1624973)</asp:Label></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
